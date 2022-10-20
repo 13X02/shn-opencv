@@ -3,7 +3,7 @@ import mediapipe as mp
 
 mp_face_detection = mp.solutions.face_detection
 mp_drawing = mp.solutions.drawing_utils
-cap = cv2.VideoCapture('Timeline 1.mov')
+cap = cv2.VideoCapture(0)
 human_cascade = cv2.CascadeClassifier('haarcascade_fullbody.xml')
 
 with mp_face_detection.FaceDetection(
